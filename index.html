@@ -5,118 +5,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ee554a58a8.js" crossorigin="anonymous"></script>
+    <script>
+        function menuFunc(){
+            var menu = document.getElementById("menu");
+            if(menu.style.display === 'flex'){
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+
+        function readMoreFunc(){
+            var p = document.getElementById("hidden");
+            var btn = document.getElementById('button');
+            if(p.style.display === 'flex'){
+                p.style.display = 'none';
+                btn.innerHTML = 'READ MORE';
+            } else{
+                p.style.display = 'flex';
+                btn.innerHTML = 'READ LESS';
+            }
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="UI design.css">
-    <title>UI design</title>
+    <title>WILLOW STUDIO</title>
 </head>
 <body>
-    <div class="page-container">
-        <header>
-            <div class="navbar">
-                <div class="left-nav">
-                    <nav class="nav-items left-items">ABOUT</nav>
-                    <nav class="nav-items left-items">GALLERY</nav>
-                    <nav class="nav-items left-items">SHOP</nav>
-                </div>
-                <img src="project imgs/y-noBg.png" alt="logo" class="logo">
-                <div class="right-nav">
-                    <nav class="nav-items right-items">BUY NOW</nav>
-                    <nav class="nav-items right-items">CONTACT</nav>
-                    <nav class="nav-items right-items">BLOG</nav>
-                </div>
+    <header>
+        <span class="fa-solid fa-bars menu-icon" onclick="menuFunc()"></span>
+        <div class="menu-container">
+            <nav id="menu" class="menu">
+                <a href="#" class="menu-items">ABOUT</a>
+                <a href="#" class="menu-items">GALLERY</a>
+                <a href="#" class="menu-items">SHOP</a>
+                <a href="#" class="menu-items">BLOG</a>
+                <a href="#" class="menu-items">CONTACT</a>
+                <a href="#" class="menu-items">BUY NOW</a>
+            </nav>
+        </div>
+        <!--            BIG SIZE NAVBAR         -->
+        <div class="brand-head">
+            <div class="big-size-navbar">
+                <nav class="left-nav">
+                    <a href="Dashboard!.html" class="nav-items left-items">ABOUT</a>
+                    <a href="#" class="nav-items left-items">GALLERY</a>
+                    <a href="#" class="nav-items left-items">SHOP</a>
+                </nav>
+                <img src="project imgs/logo.png" alt="company logo" class="logo">
+                <nav class="right-nav">
+                    <a href="#" class="nav-items right-items">BUY NOW</a>
+                    <a href="#" class="nav-items right-items">CONTACT</a>
+                    <a href="#" class="nav-items right-items">BLOG</a>
+                </nav>
             </div>
+            
             <h1>willow studio</h1>
-        </header>
-
-        <div class="div1">
-            <div class="image-flex">
-                <img src="https://images.pexels.com/photos/1002654/pexels-photo-1002654.jpeg?cs=srgb&dl=pexels-mikey-dabro-1002654.jpg&fm=jpg" alt="img1">
-                <!-- <div class="overlap overlap1"></div> -->
-                <div class="offset-box OB1">
-                    <span class="feature">COACHING + WORKSHOP</span>
-                    <span class="small-div-header">for freelancers</span>
-                </div>
-            </div>
-            <h2>OUR STORY</h2>
-            <h3>WE'RE PASSIONATE ABOUT HELPING YOU GROW</h3>
-            <div class="text-flex">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. et rem labore earum expedita perspiciatis optio cupiditate quidem enim est libero, accusamus dolore? Odio cum commodi dolor asperiores a, minus dignissimos magnam adipisci veniam ab cupiditate. Consectetur, cumque dolore! Tempora harum nulla velit!</p>
-                <p>Iure voluptates officiis rat reprehenderit veritatis, quis architecto deserunt repellendus quaerat adipisci dignissimos. Hic molestiae voluptatem saepe harum maxime perspiciatis repudiandae, rem ipsa nobis et vero architecto officia voluptas libero dicta eveniet laboriosam placeat esse, labore exercitationem fuga expedita sit!</p>
-            </div>
-            <button>READ MORE</button>
         </div>
+    </header>
 
-        <img src="https://images.pexels.com/photos/6001489/pexels-photo-6001489.jpeg?cs=srgb&dl=pexels-sam-lion-6001489.jpg&fm=jpg" alt="img2" class="img2">
-
-        <div class="div1">
-            <div class="image-flex">
-                <!-- <div class="overlap overlap2"></div> -->
-                <div class="offset-box OB2">
-                    <span class="small-div-header">from the shop</span>
-                    <span class="feature">JUMPSTART YOUR BIZ</span>
-                </div>
-                <img src="project imgs/header img.jpeg" alt="img1">
+    <section class="img-box-flex img-box-flex1">
+        <img src="project imgs/img1.jpg" alt="img1" class="flex-img">
+        <div class="box-overlap">
+            <div class="box ubox-1"></div>
+            <div class="top-box box">
+                <p>COUCHING + WORKSHOP</p>
+                <h3>for freelancers</h3>
             </div>
         </div>
+    </section>
 
-        <div class="services-container">
-            <div class="services">
-                <div class="circle circle-1">couching</div>
-                <h3>COUCHING</h3>
-                <p>
-                    Lorem ipsum sit amet consectetur.<br>
-                    Velit quae libero  elit , earum totam <br>
-                    Lorem in perspiciatis adipisicing?
-                </p>
-                <button>LEARN MORE</button>
-            </div>
-            <div class="services">
-                <div class="circle circle-2">workshop</div>
-                <h3>WORKSHOP</h3>
-                <p>
-                    Lorem ipsum sit amet consectetur.<br>
-                    Velit quae libero  elit , earum totam <br>
-                    Lorem in perspiciatis adipisicing?
-                </p>
-                <button>LEARN MORE</button>
-            </div>
-            <div class="services">
-                <div class="circle circle-3">branding</div>
-                <h3>BRANDING</h3>
-                <p>
-                    Lorem ipsum sit amet consectetur.<br>
-                    Velit quae libero  elit , earum totam <br>
-                    Lorem in perspiciatis adipisicing?
-                </p>
-                <button>LEARN MORE</button>
+    <section class="our-story-div">
+        <h2>OUR STORY</h2>
+        <h3>WE'RE PASSIONATE ABOUT HELPING YOU GROW</h3>
+        <div class="story-flex">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cum deleniti ad nobis quis nemo laudantium recusandae eaque vitae, quae aut fugiat,
+                debitis quaerat maxime inventore. Soluta suscipit dignissimos laborum tenetur.
+            </p>
+            <p>
+                Tempore, ratione facilis non quae porro cum architecto voluptatum 
+                fugiat nihil modi voluptatem saepe totam fugit, ab, quia tenetur. 
+                Tempora eos, inventore placeat iure aliquam temporibus mollitia laudantium blanditiis totam.
+            </p>
+        </div>
+        <div id="hidden" class="hidden story-flex">
+            <p>
+                Cum accusamus eos eaque, perferendis optio quos nobis quod incidunt voluptates natus
+                molestias harum, beatae doloribus quasi ad iure pariatur numquam
+                temporibus vel repudiandae iste, sint ipsum rem? Laborum, dolores?
+            </p>
+            <p>
+                Quasi, fuga. Quo delectus exercitationem vero earum suscipit vel eum sed minus, 
+                architecto quasi, vitae impedit? Fugiat sapiente aliquam, 
+                dicta atque quisquam autem saepe iste accusamus ullam consectetur illo perferendis.
+            </p>
+        </div>
+        <button id="button" onclick="readMoreFunc()">READ MORE</button>
+    </section>
+
+    <section class="img-sec">
+        <img src="project imgs/img2.jpg" alt="img2">
+    </section>
+
+    <section class="img-box-flex img-box-flex2">
+        <div class="box-overlap">
+            <div class="box ubox-2"></div>
+            <div class="top-box box">
+                <h3>from the shop</h3>
+                <p>JUMPSTART YOUR BIZ</p>
             </div>
         </div>
+        <img src="project imgs/img1.jpg" alt="img1" class="flex-img">
+    </section>
 
-        <footer>
-            <img src="project imgs/y-noBg.png" alt="logo" class="logo">
-            <h3>GET UPDATES + SWEET FREEBIES</h3>
-            <p>Sign up to recieve exclusive resourses + news</p>
-            <form action="#">
-                <input type="email" name="email" id="email" placeholder="Email Adress">
-                <button>SIGN UP</button>
-            </form>
-            <div class="contacts">
-                <div class="icon-container">
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
-                <div class="icon-container">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="icon-container">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="icon-container">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-            </div>
-            <span>Copyright 2016 willow studio | site designed and handcrafted by studio seven.</span>
-        </footer>
-    </div>
+    <section class="services-container">
+        <div class="services">
+            <div class="circle circle-1">couching</div>
+            <h3>COUCHING</h3>
+            <p>
+                Lorem ipsum sit amet consectetur.<br>
+                Velit quae libero  elit , earum totam <br>
+                Lorem in perspiciatis adipisicing?
+            </p>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="services">
+            <div class="circle circle-2">workshop</div>
+            <h3>WORKSHOP</h3>
+            <p>
+                Lorem ipsum sit amet consectetur.<br>
+                Velit quae libero  elit , earum totam <br>
+                Lorem in perspiciatis adipisicing?
+            </p>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="services">
+            <div class="circle circle-3">branding</div>
+            <h3>BRANDING</h3>
+            <p>
+                Lorem ipsum sit amet consectetur.<br>
+                Velit quae libero  elit , earum totam <br>
+                Lorem in perspiciatis adipisicing?
+            </p>
+            <button>LEARN MORE</button>
+        </div>
+    </section>
+
+    <footer>
+        <img src="project imgs/logo.png" alt="logo" class="logo">
+        <h3>GET UPDATES + SWEET FREEBIES</h3>
+        <p>Sign up to recieve exclusive resourses + news</p>
+        <form action="#" class="contact-form" netlify>
+            <input type="email" name="email" id="email" placeholder="Email Adress">
+            <button>SIGN UP</button>
+        </form>
+        <div class="contacts">
+            <a href="#" class="icon-container">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="icon-container">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="#" class="icon-container">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon-container">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+        <span>Copyright 2016 willow studio | site designed and handcrafted by studio seven.</span>
+    </footer>
 </body>
 </html>
